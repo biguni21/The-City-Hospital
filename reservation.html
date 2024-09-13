@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Hospital</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="icon" href="images/my 1.png" type="image/x-icon">
+</head>
+<body>
+
+    <!-- Top bar with Hospital Name and Contact -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="hospital-name">The City Hospital</div>
+            <div class="contact-number">Contact: 0812 574 693</div>
+        </div>
+    </div>
+
+   
+        <!-- Navbar with Background Image for Home Page -->
+    <section class="header reservation-header"> 
+        <nav>
+            <a href="Index.html"><img src="images/my 1.png" class="logo"></a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about us.html">About </a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Doctors</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                    <li><a href="International patient .html">Int.Patient</a></li>
+                    <li><a href="contact.html">Contact </a></li>
+                </ul>
+            </div>
+            <div class="welcome-message">
+                <h1>Reservation</h1>
+                
+            </div>
+        </div>
+
+        </nav>
+
+        
+    </section>
+    <!--form start-->
+    <main>
+        <section class="appointment-form">
+            <h2>Book an Appointment</h2>
+            <form action="#">
+    <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+   <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+    <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+    <label for="specialist">Select a Specialist</label>
+                <select id="specialist" name="specialist" required>
+                    <option value="">Select</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="orthopedics">Orthopedics</option>
+                    <option value="dermatology">Dermatology</option>
+                </select>
+    <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+    <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+
+            <label for="request">Special Requests or Requirements</label>
+            <textarea id="request" name="request"></textarea>
+            <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+<!--end of the form-->
+    <footer class="footer">
+        <div class="footer-container">
+    <!-- Left: Logo and two items -->
+    <div class="footer-left">
+        <img src="images/my 1.png" alt="Logo" class="footer-logo">
+            <p>The City Hospital</p>
+            <p>© 2008 Company</p>
+        </div>
+            
+    <!-- Center: Three items -->
+                    <div class="footer-center">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about us.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+  
+                        </ul>
+                    </div>
+            
+                    <!-- Right: Contact Info and Social Icons -->
+                    <div class="footer-right">
+                        <p>Contact Us</p>
+                        <p>Email: thecityhospital@gmail.com</p>
+                        <p>Phone: 0812 574 693</p>
+                        <div class="social-icons">
+                            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+                            <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>  
+    </body>
+    </html>

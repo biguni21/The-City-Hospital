@@ -1,0 +1,2634 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root{
+  --main-text-color:black;
+  --color-white:white;
+  --focused-main-color:blue and green;
+  --container-width:80%;
+}
+
+/* General Header Styles */
+.header {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+nav {
+  width: 120px;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+nav img {
+  width: 110px;
+  margin-right: 20px;
+}
+
+.navbar {
+  flex: 1;
+  text-align: right;
+  
+}
+
+.navbar ul {
+  list-style: none;
+
+}
+
+.navbar ul li {
+  display: inline;
+  margin: 10px 12px;
+
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: hsl(169, 86%, 49%);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+  width: 100%;
+  
+}
+
+/* Welcome message styles */
+.welcome-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.welcome-message h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.welcome-message button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.welcome-message button:hover {
+  background-color: #54daf5;
+}
+
+/* Page-Specific Background Images */
+.home-header {
+  background-image: linear-gradient(rgba(66, 130, 250, 0.5), rgba(57, 8, 117, 0.5)),url('https://images.stockcake.com/public/6/8/a/68a4be9f-835b-45aa-a98c-6e5aa0afe86b_large/hospital-patient-hope-stockcake.jpg');
+}
+
+
+.about-us-header {
+  background-image: linear-gradient(rgba(66, 130, 250, 0.5), rgba(57, 8, 117, 0.5)), url('https://images.stockcake.com/public/c/5/e/c5e5d58f-080e-4fb3-9d6d-179b9b392bd9_large/doctors-discussing-urgently-stockcake.jpg');
+}
+.reservation-header {
+  background-image: linear-gradient(rgba(66, 130, 250, 0.5), rgba(57, 8, 117, 0.5)),url('https://images.stockcake.com/public/b/4/0/b40e3261-7ec4-4bb4-9af5-8bd2ccf32fd5_large/focused-healthcare-professional-stockcake.jpg');
+}
+
+.contact-header {
+  background-image: linear-gradient(rgba(66, 130, 250, 0.5), rgba(57, 8, 117, 0.5)), url('https://images.stockcake.com/public/7/0/b/70b50df7-1f37-4663-bc54-06dbc7da173e_large/professional-office-call-stockcake.jpg');
+}
+
+.doctors-header {
+  background-image: linear-gradient(rgba(66, 130, 250, 0.5), rgba(57, 8, 117, 0.5)), url('https://images.stockcake.com/public/a/9/0/a903f72c-b48a-4c37-9c75-b80552cde102_large/medical-team-united-stockcake.jpg');
+}
+.international-header{
+  background-image: linear-gradient(rgba(66, 130, 250, 0.5), rgba(57, 8, 117, 0.5)), url('https://as1.ftcdn.net/v2/jpg/05/79/32/56/1000_F_579325692_WvUoQGEpTKikeOwPWtnk0jsKxD9Khncq.jpg');
+}
+.services-header {
+  background-image: linear-gradient(rgba(66, 130, 250, 0.5), rgba(57, 8, 117, 0.5)), url('https://images.stockcake.com/public/c/0/c/c0ce4abd-1a22-4f1c-8c42-70395ea941ae_large/surgical-team-working-stockcake.jpg');
+}
+.pharmacy-header {
+  background-image: linear-gradient(rgba(66, 130, 250, 0.5), rgba(57, 8, 117, 0.5)), url('https://images.stockcake.com/public/3/c/1/3c1fbdef-fbd8-41de-a011-451fb6208bd2_large/modern-pharmacy-interior-stockcake.jpg');
+}
+
+
+/* index page start*/
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #ffffff;
+}
+
+/* Top Bar Styling (Hospital Name & Contact Number) */
+.top-bar {
+  background-color: #62d8ff;
+  color: #6b20e4;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hospital-name, .contact-number {
+  font-size: 25px;
+}
+
+/* Navbar with Background Image */
+.navbar-background {
+  background-image: url('images/new\ 3.jpg');
+  background-size: cover;
+  background-position:0%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.navbar .logo img {
+  height: 60px;
+  margin-right: 30px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+  color: #2bf8ea;
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+  text-align: center;
+  color: white;
+  padding: 50px;
+  
+}
+
+.welcome-message h1 {
+  font-size: 36px;
+  color: #fff;
+}
+
+.welcome-message button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.welcome-message button:hover {
+  background-color: #005f73;
+}
+
+/* Our Services Section */
+.services-section {
+  background-color: #e3f2fd;
+  padding: 40px 0;
+}
+
+.services-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: right;
+  flex-wrap: wrap;
+}
+
+.services-img img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text-area ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.text-area ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.learn-more-btn {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: #0277bd;
+}
+
+
+
+/* Services Section */
+.services-section {
+  background-color: #b3ed70;
+  padding: 40px 0;
+  font-size: 22px;
+}
+
+
+.services-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.more-btn {
+  background-color: #007BFF var(--focused-main-color);;
+  color: white;
+  border: none var(--focused-main-color);;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.more-btn:hover {
+  background-color: #0056b3;
+}
+.services-btn {
+  background-color: #d636df;
+  color: white;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.services-btn:hover {
+  background-color: #0056b3;
+}
+
+
+/* Style for the vertical bar */
+.vertical-bar {
+  position: relative;
+  width: 100%;
+  height: 300px; 
+  background-image: url('https://images.stockcake.com/public/c/8/b/c8b8b3a2-61ed-4b21-91d3-fe6baa462442_large/doctor-reviewing-records-stockcake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+/* Overlay content inside the bar */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(255, 255, 255); /* Text color to contrast with image */
+  background-color: rgb(251, 252, 252); /* Transparent background over image */
+  padding: 5px;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #555;
+}
+/* Why Patients Choose Us Section */
+.why-choose-section {
+  background-color: #f1f8e9;
+  padding: 40px 0;
+  font-size: 22px;
+}
+
+.why-choose-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 25px;
+}
+
+.why-choose-img img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text-area ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.text-area ol li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.learn-more-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: #218838;
+}
+a {text-decoration: none;}
+
+/* Facilities Section */
+
+.facilities-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.facilities-section {
+  background-color: #e0f7fa;
+  padding: 40px 0;
+}
+
+.facilities-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.facility-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.facility-img:hover img {
+  transform: scale(1.1);
+}
+
+/* Button Styling */
+button {
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+/* Contact Us Section */
+.contact-us-section {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  border-top: 3px solid #007bff;
+}
+
+.contact-us-content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  padding: 20px;
+}
+
+.contact-us-content p {
+  font-size: 16px;
+  color: #333;
+  max-width: 600px;
+}
+
+.button-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+
+.contact-us-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-us-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+/* Footer Styling */
+.footer {
+  background-color: #d696f47d;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  border-top: 2px solid #c07bee;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; /* Align all items to the top */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0; /* Added top and bottom padding */
+  gap: 20px; /* Adjusted gap between columns */
+}
+
+/* Left Section: Logo and Text */
+.footer-left {
+  text-align: left;
+  flex-basis: 25%; /* Adjusted to occupy more space */
+}
+
+.footer-left img.footer-logo {
+  width: 100px; /* Adjusted logo size */
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  margin: 5px 0;
+}
+
+/* Center Section: Links */
+.footer-center {
+  text-align: center;
+  flex-basis: 25%; /* Adjusted to occupy more space */
+}
+
+.footer-center ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-center ul li {
+  margin: 10px 0;
+}
+
+.footer-center ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-center ul li a:hover {
+  color: #aaa;
+}
+
+/* Right Section: Contact Info & Social Icons */
+.footer-right {
+  text-align: right;
+  flex-basis: 25%; /* Adjusted to occupy more space */
+}
+
+.footer-right .social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.footer-right .social-icons a {
+  display: inline-block;
+}
+
+.footer-right .social-icons img {
+  width: 24px; 
+  height: 24px;
+  transition: opacity 0.3s; /* Smooth transition effect */
+}
+
+.footer-right .social-icons img:hover {
+  opacity: 0.7; /* Slight fade effect on hover */
+}
+
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+nav {
+  
+  color: white;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ffdd57;
+}
+
+.navbar .logo img {
+  height: 50px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #0a4c5d7c;
+  color: white;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-left img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-left p, .footer-center p, .footer-right p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle:checked + .navbar-menu ul {
+    display: flex;
+  }
+
+  .menu-toggle:checked + .navbar-menu ul {
+    display: flex;
+  }
+}
+@media screen and (max-width: 600px){
+.text{line-height: 10px;
+
+}
+/* General Footer Styles */
+.footer {
+  
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1 1 100%;
+  margin: 10px 0;
+  text-align: center;
+
+}
+
+.footer-left img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-left p, .footer-center p, .footer-right p {
+  margin: 5px 0;
+ 
+}
+
+/* Mobile-Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer-left img {
+    width: 80px; /* Adjust logo size for mobile */
+  }
+
+  .footer-right .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .footer-right .social-icons a {
+    display: inline-block;
+  }
+
+  .footer-right .social-icons img {
+    width: 24px; /* Adjust size for mobile */
+    height: 24px;
+  }
+}
+
+/* Additional Mobile Styles for Very Small Screens */
+@media (max-width: 480px) {
+  .footer-left img {
+    width: 60px; /* Further reduce logo size for very small screens */
+  }
+
+  .footer-right .social-icons img {
+    width: 20px; /* Further reduce social icon size */
+    height: 20px;
+  }
+}
+/* Media Queries for Various Screen Sizes */
+
+/* Tablet Devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  
+  }
+
+  .services-content, .why-choose-content, .facilities-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .services-img img, .why-choose-img img {
+    width: 45%; /* Adjust width for tablets */
+    height: auto;
+  }
+
+  .facility-img img {
+    width: 30%; /* Adjust width for tablets */
+    height: auto;
+  }
+}
+
+/* Desktop Devices */
+@media (min-width: 102px) {
+  .navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .services-content, .why-choose-content, .facilities-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .services-img img, .why-choose-img img, .facility-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar ul li  {
+      display: block;
+      margin: 5px 0;
+      width: 50px;
+      font-size: 8px;
+
+  
+  
+  }
+  .services-content {
+      flex-direction: column;
+  }
+  .facilities-content {
+      flex-direction: column;
+  }
+}
+.welcome-message h1 {
+  font-size: 18px;
+  color: #fff;
+}
+
+}
+  
+/* end of index page
+
+/*start about us*/
+
+/* About Us Section */
+.about-us {
+  padding: 40px;
+  background: #daffc7f1;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  width: 1500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 22px;
+}
+
+h1, h2 {
+  color: #0056b3;
+}
+
+h1:hover, h2:hover {
+  color: #003d7a;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  background: #e1e5ed;
+  padding: 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.section h2:hover {
+  background: #c5d1e0;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.image-right {
+  width: 400px;
+  max-width: 800px;
+  height: auto;
+  background: #ddd;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.image-left{
+  width: 500px;
+  max-width: 500px;
+  height: auto;
+  background: #ddd;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.image-left:hover, .image-right:hover {
+  background: #bbb;
+  transform: scale(1.05);
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 40px;
+  color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: left;
+  transition: background 0.3s ease;
+}
+
+th {
+  background: #e1e5ed;
+}
+
+td:hover {
+  background: #3799fb;
+}
+
+.table-footer {
+  text-align: center;
+  padding: 15px;
+  background: #0056b3;
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.box {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #feffff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+iframe {
+  width: 100%;
+  height: 75%;
+  border: none;
+}
+p {
+  padding: 10px;
+  
+  margin: 0;
+}
+
+/*end of about us*/
+
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  
+  /* General Styles */
+  .about-us {
+    padding: 20px;
+    width: 100%;
+    box-shadow: none; /* Optional: Remove shadow for mobile */
+  }
+  
+  /* Headings */
+  h1, h2 {
+    font-size: 1.5em; /* Adjust for mobile readability */
+  }
+
+  h1:hover, h2:hover {
+    color: #003d7a; /* Maintain hover effect */
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  /* Content */
+  .content {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+  }
+
+  .image-left, .image-right {
+    width: 100%; /* Make images responsive */
+    max-width: none;
+    height: auto;
+    margin: 10px 0; /* Add margin to separate from text */
+  }
+  
+  /* List */
+  ul {
+    padding-left: 20px; /* Reduce padding for smaller screens */
+  }
+
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  .table-footer {
+    font-size: 16px; /* Adjust font size for readability */
+    padding: 10px;
+  }
+
+  /* Container */
+  .container {
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .box {
+    width: 100%;
+    max-width: 400px; /* Limit the width of boxes */
+    height: auto; /* Adjust height to maintain aspect ratio */
+    margin-bottom: 20px; /* Add margin between boxes */
+  }
+
+  iframe {
+    height: 200px; /* Adjust height for better mobile viewing */
+  }
+
+  p {
+    font-size: 14px; /* Reduce font size for smaller screens */
+    padding: 10px;
+  }
+
+}
+
+/*international start*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #ddd;
+}
+
+header {
+  background: #f2f2f2;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  background: #ccc;
+  border-radius: 5px;
+}
+
+.main-content {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.visit-btn {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  background: #ccc;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.image-right {
+  float: right;
+  width: 300px;
+  height: 200px;
+  background: #ddd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: left;
+}
+
+.contact-footer {
+  text-align: center;
+  padding: 10px;
+  background: #73ebeb;
+  margin-top: 20px;
+}
+
+.contact-form {
+  margin-top: 50px;
+  padding: 20px;
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+   
+}
+  
+  
+  
+
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+
+
+/*end of international */
+
+/*reserve start*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #03355b;
+  color: #333;
+}
+
+header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-info {
+  text-align: right;
+}
+
+nav ul {
+  background-color: #2c3e50;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.appointment-form {
+  background-color: #cde3e6;
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2980b9;
+}
+
+.appointment-form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.appointment-form input, 
+.appointment-form select, 
+.appointment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.appointment-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.appointment-form button:hover {
+  background-color: #2980b9;
+}
+
+footer {
+  background-color: #16ebe74d;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links p {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #3498db;
+}
+/* end of reserve */
+/*services start*/
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo inside the navigation */
+header .logo img {
+  width: 50px; /* Adjust the size of the logo */
+  height: auto;
+  margin-right: 20px;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly; /* Ensures even spacing between menu items */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #777;
+}
+
+h1, h2 {
+  color: #0056b3;
+}
+
+h1:hover, h2:hover {
+  color: #003d7a;
+}
+.services-section {
+  padding: 20px;
+  background-color: white;
+}
+
+.services-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.available-services h2, .choose-services h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.service-list .service {
+  background-color: #f0f0f0;
+  padding: 20px;
+  width: 800px;
+  height: 100px;
+  text-align: center;
+  border-radius: 5px;
+}
+/* Styling for the entire services section */
+.services-section {
+  padding: 20px;
+  background-color: white;
+}
+
+.services-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for available services heading */
+.available-services h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #5e5e5e; /* Darker background for the header */
+  color: white;
+  padding: 10px;
+}
+
+/* Grid layout for service boxes */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for services */
+  gap: 15px; /* Gap between the boxes */
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+/* Styling for individual service boxes */
+.service {
+  background-color: #ffffff; /* Light gray background */
+  padding: 20px;
+  width: 100%; /* Full width of the grid column */
+  max-width: 400px; /* Maximum width of each box */
+  height: 400px;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.4s ease, transform 0.4s ease; /* Smooth transitions */
+}
+
+/* Hover effect for services */
+.service:hover {
+  background-color: #4caf50; /* Change to green on hover */
+  color: white;
+  transform: translateY(-10px); /* Lift the box slightly */
+}
+
+/* Styling for service descriptions inside the boxes */
+.service p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+  font-size: 17px;
+}
+
+/*new*/
+/* Styling for the entire services section */
+.services-section {
+  padding: 20px;
+  background-color: white;
+}
+
+.services-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for available services heading */
+.available-services h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #5e5e5e; /* Darker background for the header */
+  color: white;
+  padding: 10px;
+}
+
+/* Flexbox layout for service boxes */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns for services */
+  gap: 15px; /* Gap between the boxes */
+  justify-items:center;
+}
+
+/* Styling for individual service boxes */
+.service {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.4s ease, transform 0.4s ease; /* Smooth transitions */
+}
+
+/* Hover effect for services */
+.service:hover {
+  background-color: #4caf50; /* Change to green on hover */
+  color: white;
+  transform: translateY(-10px); /* Lift the box slightly */
+}
+
+/* Styling for service descriptions inside the boxes */
+.service p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+/* Doctors Section */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d79797;
+}
+
+/* Gallery Container */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 140px;
+  padding: 40px;
+  justify-items: center;
+}
+
+/* Gallery Item */
+.gallery-item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Info */
+.gallery-info {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  color: rgb(226, 167, 167);
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .gallery-info {
+  opacity: 1;
+}
+
+.gallery-info h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.gallery-info p {
+  font-size: 1rem;
+}
+/* Style for the vertical bar */
+.vertical-bar-ser {
+  position: relative;
+  width: 100%;
+  height: 50px; /* Adjust the height as necessary */
+  background-image: url('images/re.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+/* Overlay content inside the bar */
+.overlay-content-ser {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Text color to contrast with image */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background over image */
+  padding: 20px;
+  background-color: #b7f3ff;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #555;
+}
+/* General Reset and Body Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d79797;
+}
+
+/* Header Styling */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo img {
+  width: 50px; /* Adjust the size of the logo */
+  height: auto;
+  margin-right: 20px;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly; 
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #555;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #777;
+}
+
+/* Headings Styling */
+h1, h2 {
+  color: #0056b3;
+}
+
+h1:hover, h2:hover {
+  color: #003d7a;
+}
+
+/* Services Section */
+.services-section {
+  padding: 20px;
+  background-color: white;
+}
+
+.services-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Available Services Heading */
+.available-services h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #5e5e5e; /* Darker background for the header */
+  color: white;
+  padding: 10px;
+}
+
+/* Flexbox Layout for Service Boxes */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 15px; /* Gap between the boxes */
+  justify-items: center;
+}
+
+/* Styling for Individual Service Boxes */
+.service {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px;
+  width: 100%; /* Full width inside grid item */
+  max-width: 200px; /* Maximum width */
+  height: 100px;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.4s ease, transform 0.4s ease; /* Smooth transitions */
+}
+
+/* Hover Effect for Services */
+.service:hover {
+  background-color: #4caf50; 
+  color: white;
+  transform: translateY(-10px); /* Lift the box slightly */
+}
+
+/* Service Description Styling */
+.service p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Gallery Section */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px; /* Gap between items */
+  padding: 40px;
+  justify-items: center;
+}
+
+.gallery-item {
+  position: relative;
+  width: 100%;
+  max-width: 300px; /* Maximum width */
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Info */
+.gallery-info {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  color: rgb(226, 167, 167);
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .gallery-info {
+  opacity: 1;
+}
+
+.gallery-info h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.gallery-info p {
+  font-size: 1rem;
+}
+
+/* Vertical Bar Section */
+.vertical-bar-reserve1 {
+  position: relative;
+  width: 100%; /* Full width */
+  max-width: 300px; /* Maximum width for large screens */
+  height: 20px;
+  background-image: url('https://images.stockcake.com/public/c/8/b/c8b8b3a2-61ed-4b21-91d3-fe6baa462442_large/doctor-reviewing-records-stockcake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+/* Overlay Content inside the Bar */
+.overlay-content-reserve1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Text color to contrast with image */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background over image */
+  padding: 20px;
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+  header .logo img {
+    width: 40px; /* Smaller logo on mobile */
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+    
+  }
+
+  .services-section, .gallery-container {
+    padding: 10px;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr; /* Single column on mobile */
+  }
+
+  .service {
+    max-width: 100%; /* Full width inside grid item */
+  }
+
+  .gallery-item {
+    max-width: 100%; /* Full width for gallery items */
+  }
+}
+
+/* Tablet Devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header .logo img {
+    width: 45px; /* Adjust logo size for tablets */
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  .service-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+
+/*end services*/
+
+/*contact start */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-size: 22px;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hospital-name {
+  font-size: 2rem;
+}
+
+.contact-number {
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #2bf1f4;
+}
+
+/* Main Content */
+main {
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.contact-info {
+  width: 40%;
+  padding: 40px;
+  background-color: #203647;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-info h3 {
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style-type: none;
+}
+
+.contact-info ul li {
+  margin-bottom: 20px;
+}
+
+.contact-info ul li i {
+  margin-right: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00a8ff;
+}
+
+.contact-form {
+  width: 60%;
+  padding: 40px;
+}
+
+.contact-form h3 {
+  margin-bottom: 20px;
+  color: #203647;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #00a8ff;
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  border-color: #00a8ff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #203647;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00a8ff;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .contact-info, .contact-form {
+      width: 100%;
+  }
+}
+
+
+/* Location Section */
+.location-section {
+  background-color: #2cbde1;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  
+}
+
+#map {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+/* Style for the vertical bar */
+.vertical-bar-contact {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust the height as necessary */
+  background-image: url('https://images.stockcake.com/public/f/5/e/f5e2cbf2-6bfc-4d19-86da-a1a73064769c_large/focused-healthcare-professional-stockcake.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+/*end of contact*/
+
+/*start doctors*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Header Styles */
+header {
+  background-color: #0044cc;
+  background-image: linear-gradient(rgba(66, 130, 250, 0.5),rgba(57, 8, 117, 0.5)),url(images/doctors.jpeg);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.hospital-name, .contact-number {
+  font-size: 1.2em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #33d8f9;
+}
+
+/* Meet Your Doctor Section */
+.meet-doctor {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.meet-doctor h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.appointment-btn {
+  background-color: #0400cb;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-btn:hover {
+  background-color: #0e11d8;
+}
+ /* General Reset */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+
+/* Doctors Section */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d79797;
+}
+
+/* Gallery Container */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 140px;
+  padding: 40px;
+  justify-items: center;
+}
+
+/* Gallery Item */
+.gallery-item {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery Info */
+.gallery-info {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  color: rgb(226, 167, 167);
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-item:hover .gallery-info {
+  opacity: 1;
+}
+
+.gallery-info h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.gallery-info p {
+  font-size: 1rem;
+}
+
+/* Map Section */
+.location {
+  padding: 50px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+
+/*end of doctors*/
+/*srart pharmacy*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50;
+  padding: 20px;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #18d5ff;
+}
+
+header .contact-info {
+  font-size: 1.1em;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.box {
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; 
+  margin-bottom: 10px;
+}
+
+.content {
+  padding: 10px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 0.9em;
+  color: #666;
+}
+main {
+  padding: 20px;
+}
+
+.banner {
+  background-color: #2196F3;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.product-gallery {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.product {
+  background-color: #fdfafa;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.product:hover {
+  background-color: #ddd;
+}
+
+.form-section {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  font-size: 20px;
+  
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group input[type="file"] {
+  flex: 2;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+button.submit-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+  background-color: #45a049;
+}
+
+
+/*end of pharmacy*/
+/*special service*/
+/* Styling for the entire services section */
+.services-section {
+  padding: 20px;
+  background-color: white;
+}
+
+.services-section h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for available services heading */
+.available-services h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #5e5e5e; /* Darker background for the header */
+  color: white;
+  padding: 10px;
+}
+
+/* Grid layout for service boxes */
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for services */
+  gap: 15px; /* Gap between the boxes */
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+/* Styling for individual service boxes */
+.service {
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px;
+  width: 100%; /* Full width of the grid column */
+  max-width: 400px; /* Maximum width of each box */
+  height: 400px;
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.4s ease, transform 0.4s ease; /* Smooth transitions */
+}
+
+/* Hover effect for services */
+.service:hover {
+  background-color: #4caf50; 
+  color: white;
+  transform: translateY(-10px); /* Lift the box slightly */
+}
+
+/* Styling for service descriptions inside the boxes */
+.service p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+  font-size: 17px;
+}
+/*End of special service*/
+
+/* Mobile Responsive Styles */
+@media (max-width: 900px) {
+  nav {
+    width: 100%;
+    padding: 20px 10px; 
+  }
+
+  nav img {
+    width: 8px; /* Smaller logo */
+    margin-right: 10px; /* Adjust margin */
+  }
+
+  .navbar {
+    flex: 1;
+    text-align: right; 
+    width: 20px;
+  }
+
+  .navbar ul {
+    padding: 0;
+    width: 320px;
+    gap: 5px;
+  }
+
+  .navbar ul li {
+    display: block; /* Stack the links vertically */
+    margin: 5px 0; /* Adjust margin for vertical stacking */
+  
+  }
+
+  .navbar ul li a {
+    font-size: 8px; /* Smaller font size for mobile */
+  }
+
+  .navbar ul li::after {
+    bottom: -5px; /* Adjust underline position */
+  }
+}
+
+/* For smaller mobile screens (like phones under 480px) */
+@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    padding: 15px 5px; /* Further reduce padding */
+  }
+
+  nav img {
+    width: 8px; /* Even smaller logo */
+  }
+
+  .navbar ul li a {
+    font-size: 5px; /* Smaller font for smaller screens */
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  
+  .service-list {
+    grid-template-columns: 3fr; /* 1 column for mobile devices */
+    gap: 10px; 
+  }
+
+  .service {
+    height: auto;
+    max-width: 375px; 
+  }
+}
+
+@media (max-width: 480px) {
+  /* Additional adjustments for very small screens */
+  .service p {
+    font-size: 15px; /* Slightly smaller text for very small screens */
+  }
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .form-group {
+    flex-direction: column; /* Stack label and input vertically */
+  }
+
+  .form-group label {
+    margin-right: 0; 
+  }
+}
+
+
+/* Responsive Styles for Header */
+@media (max-width: 768px) {
+  .header {
+    min-height: 60vh; /* Adjust height for smaller screens */
+  }
+
+  .header-content {
+    width: 100%; 
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    font-size: 14px; /* Adjust font size for very small screens */
+    padding: 5px; /* Further reduce padding */
+  }
+}
+
+
